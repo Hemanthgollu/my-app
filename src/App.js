@@ -8,6 +8,12 @@ import Cart from './Cart';
 import ProductDetails from './ProductDetails';
 import Employees from './Employees';
 import Timer from './Timer';
+import Productspecifications from './Productspecifications';
+import Productrating from './Productrating';
+import Productdescription from './Productdescription';
+
+
+
 
 
 function App() {
@@ -17,7 +23,11 @@ function App() {
   
        <Routes>
         <Route path="/Cart" element={<Cart/>}></Route>
-        <Route path="/ProductDetails/:productId" element={<ProductDetails/>}></Route>
+        <Route path="/ProductDetails/:productId" element={<ProductDetails/>}>
+          <Route path="Productdescription" element = {<Productdescription/>}></Route>
+          <Route path="Productspecifications" element = {<Productspecifications/>}></Route>
+          <Route path="Productrating" element = {<Productrating/>}></Route>
+        </Route>
         <Route path="/Employees" element={<Employees/>}></Route>
         <Route path="/" element={<Home/>}></Route>
        </Routes>

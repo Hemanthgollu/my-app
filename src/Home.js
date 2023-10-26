@@ -117,7 +117,7 @@ function Home() {
                     <img className ="img-fluid" width="150px" src = {product.imgSrc} alt="product image"></img>
                 </div>
                 <div className = "col-sm-6">
-                    <h3><Link to = {`productDetails/${product.id}?name=${product.name}&price=${product.price}`}>{product.name}</Link></h3>
+                    <h3><Link to = {`productDetails/${product.id}/Productdescription?name=${product.name}&price=${product.price}`}>{product.name}</Link></h3>
                     <p>{product.rating}</p>
                     <ul>
                         {product.specifications.map(specification =>(
