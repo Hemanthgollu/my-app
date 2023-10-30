@@ -11,6 +11,7 @@ import Timer from './Timer';
 import Productspecifications from './Productspecifications';
 import Productrating from './Productrating';
 import Productdescription from './Productdescription';
+import Form from './Employees/Form';
 
 
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="Productspecifications" element = {<Productspecifications/>}></Route>
           <Route path="Productrating" element = {<Productrating/>}></Route>
         </Route>
+        <Route path="/Form" element={<Form/>}></Route>
         <Route path="/Employees" element={<EmployeeList/>}></Route>
         <Route path="/" element={<Home/>}></Route>
        </Routes>

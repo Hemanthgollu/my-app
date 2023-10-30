@@ -31,7 +31,7 @@ function Navbar() {
           <Link className="nav-link" to="/Cart">Cart</Link>
         </li>
         <li className="nav-item">
-          <p className="nav-link" onClick={loginUser}>Login</p>
+          <Link className="nav-link" to = '/Form'>Login</Link>
         </li>
       </ul>
       <form className="d-flex" role="search">
