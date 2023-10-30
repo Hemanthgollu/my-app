@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Cart from './Cart';
 import ProductDetails from './ProductDetails';
-import Employees from './Employees';
+import EmployeeList from './Employees/EmployeeList';
 import Timer from './Timer';
 import Productspecifications from './Productspecifications';
 import Productrating from './Productrating';
@@ -28,7 +28,7 @@ function App() {
           <Route path="Productspecifications" element = {<Productspecifications/>}></Route>
           <Route path="Productrating" element = {<Productrating/>}></Route>
         </Route>
-        <Route path="/Employees" element={<Employees/>}></Route>
+        <Route path="/Employees" element={<EmployeeList/>}></Route>
         <Route path="/" element={<Home/>}></Route>
        </Routes>
        
