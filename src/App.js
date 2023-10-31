@@ -12,6 +12,7 @@ import Productspecifications from './Productspecifications';
 import Productrating from './Productrating';
 import Productdescription from './Productdescription';
 import Form from './Employees/Form';
+import Register from './Register';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="Productrating" element = {<Productrating/>}></Route>
         </Route>
         <Route path="/Form" element={<Form/>}></Route>
+        <Route path="/Register" element={<Register/>}></Route>
         <Route path="/Employees" element={<EmployeeList/>}></Route>
         <Route path="/" element={<Home/>}></Route>
        </Routes>
