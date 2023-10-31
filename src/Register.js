@@ -1,11 +1,22 @@
 import {useForm} from 'react-hook-form';
+import {useEffect} from 'react';
+import axios from 'axios';
 
 function Register() {
     const {register,handleSubmit,formState:{errors},watch} = useForm();
     const password= watch('password');
     const registerUser = () => {
 
-    }
+    };
+    useEffect(()=> {
+        axios.get('https://dummyjson.com/products/1').then(function(response){
+            console.log(response)
+
+        }).catch(function(error){
+
+        })
+    },[]);
+        
         return(
             <div className='container'>
             <div className= 'row'>
